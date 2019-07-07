@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mitchell Data Science</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="my_page_style.css">
+</head>
+
+
+<body>
+    <nav class="navbar sticky-top  navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Mitchell Data Science</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="my_page_about_me.html">About Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="ride_share_project_page.html">Ride Share Analytics</a>
+                        <a class="dropdown-item" href="hero_game_project_page.html">Heroes Of Pymoli Data Munging</a>
+                        <a class="dropdown-item" href="weather_project_page.html">Randomized API Weather Analysis</a>
+                        <a class="dropdown-item" href="kickstarter_project_page.html">Kickstarter Analytics</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="all_projects_page.html">All Projects</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <br>
+        <h1> Randomized API Weather Analysis</h1>
+        <hr><br>
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-3">
+                <div id="list-example" class="list-group" data-offset="0">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">Abstract</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Temperature vs Lattitude
+                        Analysis</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Wind Speed vs Lattitude
+                        Analysis</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Humidity vs Lattitude
+                        Analysis</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-5">Clouodiness vs Lattitude
+                        Analysis</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-6">Summary</a>
+                </div>
+            </div>
+
+
+            <div class="col-9">
+                <div data-spy="scroll" data-target="#list-example" data-offset="0"
+                    class="scrollspy-example change-color-black">
+
+                    <h4 id="list-item-1">Abstract</h4>
+                    <p>
+                        <br><br><br>
+                        <img src="https://3c1703fe8d.site.internapcdn.net/newman/csz/news/800/2018/1-whytheweathe.jpg"
+                            alt="Abstract">
+                        <br><br><br>
+                        I this project, I will be creating a program that randomly genetates a list of 500 plus cities
+                        in an attemp to see if there is
+                        a significant link between specific weather patterns and lattitide. I will be measuring wind
+                        speed vs. latitude, temperature vs. latitude,
+                        humisity vs. latitude, and cloudiness vs. latitude for this analysis.
+                        <br><br><br><br><br>
+                    </p>
+
+
+                    <h4 id="list-item-2">Temperature vs Lattitude Analysis</h4>
+                    <p>
+                        <br><br>
+                        <img src="https://raw.githubusercontent.com/hgmhd7/6-PythonAPIs/master/City_Lat_vs_Temp.png"
+                            alt="Temperature vs Lattitude Analysis">
+                        <br><br><br>
+                        - Here, we can see a clear relationship between proximity to the equator and maximum
+                        temperature.
+                        <br><br>
+                        - It appears that the closer a city gets to the equator, the higher the max temperature gets.
+                        <br><br>
+                        - There is also a slight bias of cities above the equator (circa 20 degrees latitude) with a
+                        higher maximum temperature.
+                        <br><br>
+                        - Vice versa, the further a city gets form the equator, the lower the max temperature is.
+
+                        <br><br><br><br><br>
+                    </p>
+
+                    <h4 id="list-item-3">Wind Speed vs Lattitude Analysis</h4>
+                    <p>
+                        <br><br>
+                        <img src="https://raw.githubusercontent.com/hgmhd7/6-PythonAPIs/master/City_Lat_vs_Wind.png"
+                            alt="Wind Speed vs Lattitude Analysis">
+                        <br><br><br>
+
+                        - There appears to be no strong relationship between city latitude and wind speed.
+                        <br><br>
+                        - It is noteworthy to mention, however, that the cities with the highest latitudes appear to
+                        have
+                        the biggest concentration outliers in terms of high wind speeds.
+
+                        <br><br><br><br><br>
+                    </p>
+
+                    <h4 id="list-item-4">Humidity vs Lattitude Analysis</h4>
+                    <p>
+                        <br><br>
+                        <img src="https://raw.githubusercontent.com/hgmhd7/6-PythonAPIs/master/City_Lat_vs_Humid.png"
+                            alt="Humidity vs Lattitude Analysis">
+                        <br><br><br>
+                        - With regard to city latitude vs humidity, there appears to be no strong relationship between
+                        the two factors.
+                        <br><br>
+                        - However, the cities with the lowest humidity percentages appear slightly to cluster around 20
+                        degrees latitude.
+
+                        <br><br><br><br><br>
+                    </p>
+
+                    <h4 id="list-item-5">Clouodiness vs Lattitude Analysis</h4>
+                    <p>
+                        <br><br>
+                        <img src="https://raw.githubusercontent.com/hgmhd7/6-PythonAPIs/master/City_Lat_vs_Cloud.png"
+                            alt="Clouodiness vs Lattitude Analysis">
+                        <br><br><br>
+
+                        - Regarding city latitude vs. cloudiness, there appears to be no strong relationship between the
+                        two factors.
+                        <br><br>
+                        - There is, however, a noticeable distribution of cities with 0, 20, 40, ~75, and 100 percent
+                        cloudiness with the highest concentrations of the group being 0, ~75, and 100 percent
+                        cloudiness.
+                        <br><br>
+                        - This distribution appears to be independent of latitude.
+                        <br><br>
+                        - This could be due to human bias (i.e. bias toward round numbers) in the way they calculate the
+                        cloudiness percentages or just a natural phenomenon…
+
+                        <br><br><br>
+                    </p>
+
+                    <h4 id="list-item-6">Summary</h4>
+                    <p>
+                        <br><br>
+
+                        Given the overall data set, the only clear relationship between latitude and weather out of the
+                        four factors measured appear to be between latitude and max temperature. The closer a city is to
+                        the equator, the hotter, and the further away a city is from the equator, the colder.
+                        <br><br>
+                        While
+                        there are some notable correlations in other factors of the data set, max temperature appears to
+                        be the most noteworthy argument for weather having strong correlations with latitude. For future
+                        considerations, it would be interesting to see how other weather factors relate to the latitude
+                        of a city.
+
+                        <br><br><br><br><br>
+
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h3>Project Links</h3>
+        <ul>
+            <li><a href="https://github.com/hgmhd7/6-PythonAPIs" target="_blank">Randomzed API Weather Analysis</a></li>
+            <li><a href="https://github.com/hgmhd7/6-PythonAPIs/blob/master/WeatherPy_Final.ipynb"
+                    target="_blank">Randomzed API Weather Kernel (Code)</a></li>
+            <li><a href="city_weather_api_data.html">Data</a></li>
+        </ul>
+        <br></br>
+    </div>
+
+
+    <nav class="navbar sticky-bottom  navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">MDS</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </div>
+
+    </nav>
+
+
+
+</body>
+
+</html>

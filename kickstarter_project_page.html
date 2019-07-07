@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mitchell Data Science</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="my_page_style.css">
+</head>
+
+
+<body>
+    <nav class="navbar sticky-top  navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Mitchell Data Science</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="my_page_about_me.html">About Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="ride_share_project_page.html">Ride Share Analytics</a>
+                        <a class="dropdown-item" href="hero_game_project_page.html">Heroes Of Pymoli Data Munging</a>
+                        <a class="dropdown-item" href="weather_project_page.html">Randomized API Weather Analysis</a>
+                        <a class="dropdown-item" href="kickstarter_project_page.html">Kickstarter Analytics</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="all_projects_page.html">All Projects</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <br>
+        <h1> Kickstarter Analytics</h1>
+        <hr><br>
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-3">
+                <div id="list-example" class="list-group" data-offset="0">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">Abstract</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Macro Category Analysis</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Sub Category Analysis</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Monthly Analysis</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-5">Goal/ Outcomes Analysis </a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-6">Summary</a>
+                </div>
+            </div>
+
+            <div class="col-9">
+                <div data-spy="scroll" data-target="#list-example" data-offset="0"
+                    class="scrollspy-example change-color-black">
+
+                    <h4 id="list-item-1">Abstract</h4>
+                    <p>
+                        <br><br><br><br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6bk5RSp8kwiq4b37H6GEFAlwpy1qfRNH7rI3nins1uzOIYn9lBA"
+                            alt="Kickstarter Abstract Picture">
+                        <br><br><br>
+                        Over two billion dollars have been raised using the massively successful crowdfunding service,
+                        Kickstarter, but not every project has found success. Of the over 300,000 projects launched on
+                        Kickstarter, only a third have made it through the funding process with a positive outcome.
+                        <br><br>
+                        Since getting funded on Kickstarter requires meeting or exceeding the project's initial goal,
+                        many organizations spend months looking through past projects in an attempt to discover some
+                        trick to finding success. In this project, I will organize and analyze a database of
+                        four thousand past projects in order to uncover any hidden trends.
+                        <br><br><br>
+                    </p>
+
+                    <h4 id="list-item-2">Macro Category Analysis</h4>
+                    <p>
+                        <br><br><br><br>
+                        <img src="https://raw.githubusercontent.com/hgmhd7/DataViz--Homework-1/master/KS_outcomes_by_category.png"
+                            alt="Macro Category Analysis">
+                        <br><br><br>
+                        - The above chart shows a clear bias toward theatre projects as far as the number of campaigns
+                        on
+                        Kickstarter. Music is the second most popular type of Kickstarter campaign followed closely by
+                        technology.
+                        <br><br>
+                        - As far as the success rates go, music Kickstarter campaigns appear to have the highest rate of
+                        success followed by theatre, and film and video. I have calculated the success rates below:
+                        <br><br>
+                        - Music: 540 successful campaigns/ 700 overall = 77.14% Success Rate
+                        <br><br>
+                        - Theatre: 839 successful campaigns/ 1393 overall = 60.23% Success Rate
+                        <br><br>
+                        - Film and Video: 300 successful campaigns/ 520 overall = 57.69% Success Rate
+                        <br><br>
+                        - Journalism is by far the laggard here. All 24 Journalism projects that were started ended up
+                        being
+                        canceled, thus leaving a success rate of 0%.
+                        <br><br><br>
+                    </p>
+
+                    <h4 id="list-item-3">Sub Category Analysis</h4>
+                    <p>
+                        <br><br><br><br>
+                        <img src="https://raw.githubusercontent.com/hgmhd7/DataViz--Homework-1/master/KS_outcomes_by_sub_category.png"
+                            alt="Sub Category Analysis">
+                        <br><br><br>
+                        - Given the above information, the plays sub category within the theater parent category is the
+                        biggest outlier as far as number of projects go.
+                        <br><br>
+                        - Plays account for an overwhelming majority of the campaigns in the theatre group. Out of 1393
+                        theatre Kickstarter campaigns, 1066 of them are plays. Therefore, plays account for 76.53% of
+                        the
+                        activity in the theater parent category.
+                        <br><br><br>
+                    </p>
+
+                    <h4 id="list-item-4">Monthly Analysis</h4>
+                    <p>
+                        <br><br><br><br>
+                        <img src="https://raw.githubusercontent.com/hgmhd7/DataViz--Homework-1/master/KS_year_of_outcomes.png"
+                            alt="Monthly Analysis">
+                        <br><br><br>
+                        - The month containing the highest number of successful Kickstarter campaigns is May at 234
+                        successful campaigns.
+                        <br><br>
+                        - The month containing the highest number of failed projects is July at 150 failed. This is
+                        followed
+                        closely by January and October which both have 149 failed projects.
+                        <br><br>
+                        - July and November have the most canceled projects at 43 and 37 respectively.
+                        <br><br>
+                        - Overall, activity seems to roughly be at it’s peak during the 2nd and 4th quarter.
+                        <br><br><br>
+                    </p>
+
+                    <h4 id="list-item-5">Goal/ Outcomes Analysis</h4>
+                    <p>
+                        <br><br><br><br>
+                        <img src="https://raw.githubusercontent.com/hgmhd7/DataViz--Homework-1/master/KS_outcomes_by_goal.png"
+                            alt="Goal/ Outcome Analysis">
+                        <br><br><br>
+                        - Projects that have a lower goal amount tend to have a higher probability of success.
+                        <br><br>
+                        - Inversely, projects that higher goal amount tent to have a higher probability of failure.
+                        <br><br>
+                        - The peak rate of success in relation to goal amount is 71% with campaigns having goals that
+                        are
+                        less than $1,000.
+                        <br><br>
+                        - The peak rate of failure in relation to goal amount is 58% with campaigns having goals that
+                        are
+                        above $50,000.
+                        <br><br>
+                        - As far as candled projects go overall, the higher the goal amount, the higher the probability
+                        of
+                        cancelation.
+                        <br><br>
+                        - Per the previous post, a good sweet spot where this tends to plateau and the severity of the
+                        trending slope flattens is between goal amounts of $10,000 to $40,000. These hover roughly
+                        between a
+                        40% and 50% chance of success.
+                        <br><br><br>
+                    </p>
+
+                    <h4 id="list-item-6">Summary</h4>
+                    <p>
+                        <br><br><br><br>
+                        What are three conclusions we can make about Kickstarter campaigns given the provided data?
+                        <br><br>
+                        - Given the data one conclusion we can make about Kickstarter campaigns is that Theatre projects
+                        are,
+                        by far, the most prolific category of campaigns on Kickstarter.
+                        <br><br>
+                        - Although, it is not the most prolific project type on Kickstarter, music has the overall
+                        highest
+                        success rate at a circa 77.14% Success Rate.
+                        <br><br>
+                        - From the goal/ monies raised standpoint, if you want your project to have a greater than 50%
+                        chance
+                        <br><br>
+                        of being fully funded, it is best to keep the goal between $0 and circa $7,500 with the highest
+                        rate
+                        of success being Kickstarter campaigns with goals of less than $1,000 (71% success)
+                        <br><br><br><br>
+                        What are some of the limitations of this dataset?
+                        <br><br>
+                        - It would be helpful if we had some sort of indicator as to weather or not this was a first
+                        campaign
+                        by the publishers or if they have released any other successful campaigns in the past.
+                        <br><br>
+                        - It would also be interesting to have information on what the supporters received by backing
+                        projects so we could infer what influence that had on success rates. Did they receive a product
+                        (if
+                        so what was the monetary value), equity, producer credits etc… ?
+                        <br><br><br><br>
+                        What are some other possible tables/graphs that we could create?
+                        <br><br>
+                        - We could create a table showing the highest distribution of big money donations. (i.e. Any
+                        campaign
+                        that had an average donation size of $100 or more)
+                        <br><br>
+                        - We could also create charting around the average length of the funding period for the
+                        projects. We
+                        could chart this around categories and or the size of the goal.
+                        <br><br>
+                        - Charting could be created around the countries the Kickstarter projects were designated in.
+                        <br><br>
+                        - There could also be a chart created to show the success rate and categories of any project
+                        that
+                        was
+                        a “Staff Pick”.
+                        <br><br><br>
+
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h3>Project Links</h3>
+        <ul>
+            <li><a href="https://github.com/hgmhd7/DataViz--Homework-1" target="_blank">Kickstarter Analysis</a></li>
+            <li><a href="https://github.com/hgmhd7/DataViz--Homework-1/blob/master/StarterBook.xlsx"
+                    target="_blank">Kickstarter Raw Excel Workbook</a></li>
+        </ul>
+        <br></br>
+    </div>
+
+
+    <nav class="navbar sticky-bottom  navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">MDS</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </div>
+
+    </nav>
+
+
+
+</body>
+
+</html>

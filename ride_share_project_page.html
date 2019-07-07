@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mitchell Data Science</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="my_page_style.css">
+</head>
+
+
+<body>
+    <nav class="navbar sticky-top  navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Mitchell Data Science</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="my_page_about_me.html">About Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="ride_share_project_page.html">Ride Share Analytics</a>
+                        <a class="dropdown-item" href="hero_game_project_page.html">Heroes Of Pymoli Data Munging</a>
+                        <a class="dropdown-item" href="weather_project_page.html">Randomized API Weather Analysis</a>
+                        <a class="dropdown-item" href="kickstarter_project_page.html">Kickstarter Analytics</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="all_projects_page.html">All Projects</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <br>
+        <h1>Ride Share Analytics</h1>
+        <hr><br>
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-3">
+                <div id="list-example" class="list-group" data-offset="0">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">Abstract</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Analytic Overview</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Drivers Breakdown</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Fares Breakdown</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-5">City Type Breakdown</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-6">Summary</a>
+                </div>
+            </div>
+
+
+            <div class="col-9">
+                <div data-spy="scroll" data-target="#list-example" data-offset="0"
+                    class="scrollspy-example change-color-black">
+
+                    <h4 id="list-item-1">Abstract</h4>
+                    <p>
+                        <br><br><br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSP61lYNAhQF58Caya1u5TgHDjDtWJaRTJd9xvP2vSfjSUAt1o0g"
+                            alt="Abstract">
+                        <br><br>
+                        In this project, I will be looking through ride sharing data to make some key determinations
+                        from
+                        my data set.
+                        With the data, I will try to see if there are any major correlations between the type of city
+                        (rurual, suburban, or urban) the rides are in
+                        and the price of fares/ number of rides.
+                        <br><br><br><br><br>
+                    </p>
+
+                    <h4 id="list-item-2">Analytic Overview</h4>
+                    <p>
+                        <br><br>
+                        <img src="https://raw.githubusercontent.com/hgmhd7/DataViz-5--Matplotlib-HW/master/Bubble_Pyber.png"
+                            alt="Analytic Overview">
+                        <br><br><br>
+                        - Per the above bubble chart, we can see clear correlations between the number of drivers,
+                        number of rides, and type of cites.
+                        <br><br>
+                        - In the cities that have the lowest demand for rides, there are less drivers on average
+                        (Rural). In the cities that have the highest demand for rides, there are more drivers on average
+                        (Urban). The suburban cities fall somewhere in the middle of the two extremes of the data set
+                        with a moderate number of rides and drivers in comparison.
+                        <br><br>
+                        - To add to this observation, this disparity creates a supply/ demand dynamic. The cities with
+                        the lowest supply of drivers, on average, appear to have a premium on their average fair prices.
+                        <br><br>
+                        - Note, this higher average fare price could also be due to the fact that rides in rural
+                        settings probably cover longer distances since the infrastructure is more spread out and
+                        potential destinations can be few and far between.
+
+                        <br><br><br><br><br>
+                    </p>
+
+                    <h4 id="list-item-3">Drivers Breakdown</h4>
+                    <p>
+                        <br><br>
+                        <img src="https://raw.githubusercontent.com/hgmhd7/DataViz-5--Matplotlib-HW/master/Pie_Drivers.png"
+                            alt="Drivers Breakdown">
+                        <br><br><br>
+                        - The biggest piece of the pie as far as percentage of total drivers goes to urban cities at
+                        80.9%.
+                        <br><br>
+                        - Rural cities have the lowest percentage of drivers (2.6%) and suburban cities have the median
+                        percentage of drivers (16.5%).
+                        <br><br><br><br><br>
+                    </p>
+
+                    <h4 id="list-item-4">Fares Breakdown</h4>
+                    <p>
+                        <br><br>
+                        <img src="https://raw.githubusercontent.com/hgmhd7/DataViz-5--Matplotlib-HW/master/Pie_Fares.png"
+                            alt="Fares Breakdown">
+                        <br><br><br>
+                        - Even through urban fares are cheaper on average, they share the greatest percent of the fares
+                        being charged overall at 62.7%. This is attributable to the fact that the volume of rides is so
+                        high in these types of cities. Even though they are the lowest priced due to abundant
+                        competition, they have a higher overall sum when volume is taken into account.
+                        <br><br>
+                        - Even though rural rides are the most expensive, they only account for 6.8% of the overall
+                        fares due to the low volume.
+                        <br><br>
+                        - Suburban Rides account for 30.5% of the overall fares.
+                        <br><br><br><br><br>
+                    </p>
+
+                    <h4 id="list-item-5">City Type Breakdown</h4>
+                    <p>
+                        <br><br>
+                        <img src="https://raw.githubusercontent.com/hgmhd7/DataViz-5--Matplotlib-HW/master/Pie_Fares.png"
+                            alt="City Type Breakdown">
+                        <br><br><br>
+                        - As expected, urban cities have the highest share of rides (68.4%). A contributing factor to
+                        this is also the fact that urban cities are more densely populated, thus they are going to
+                        naturally have higher demand.
+                        <br><br>
+                        - Rural cities are likely the most sparsely populated city types and they only account for 5.3%
+                        of the total rides.
+                        <br><br>
+                        - Suburban cities account for 26.3% of the overall rides.
+                        <br><br><br>
+                    </p>
+
+                    <h4 id="list-item-6">Summary</h4>
+                    <p>
+                        <br><br>
+                        To briefly summarize our dataset it looks like there is a clear correlation between city size,
+                        number of drivers/ rides and
+                        average fare price. Rural areas tend to have the losest number of drivers and rides and the
+                        highest fares. The high fares could be due to
+                        the higher total trip distances and less supply of drivers. In contrast, the cities have a
+                        higher supply of drivers, more rides, and have lower
+                        average fares. The suburban areas rank in the middle in comparison with moderate fares, and an
+                        average number of drivers/ rides in relation to the rest of our data.
+                        <br><br><br><br><br>
+
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h3>Project Links</h3>
+        <ul>
+            <li><a href="https://github.com/hgmhd7/DataViz-5--Matplotlib-HW" target="_blank">Ride Share Analytics</a>
+            </li>
+            <li><a href="https://github.com/hgmhd7/DataViz-5--Matplotlib-HW/blob/master/Pyber_Final_2.ipynb"
+                    target="_blank">Ride Share Kernel (Code)</a></li>
+            <li><a href="ride_share_data.html">Data</a></li>
+        </ul>
+        <br></br>
+    </div>
+
+
+    <nav class="navbar sticky-bottom  navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">MDS</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </div>
+
+    </nav>
+
+
+
+</body>
+
+</html>
