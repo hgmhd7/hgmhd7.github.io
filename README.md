@@ -1,2 +1,3 @@
 # LEGACY Portfolio
-My Personal Portfolio Web Page
+
+Deployed web page for my LEGACY Portfolio.
